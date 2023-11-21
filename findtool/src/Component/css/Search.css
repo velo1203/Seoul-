@@ -1,0 +1,25 @@
+/* Search.css */
+
+/* 검색창 전체를 감싸는 div 스타일링 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  /* 실제 input 검색창 스타일링 */
+  .search-input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* 검색창에 포커스가 있을 때 스타일링 */
+  .search-input:focus {
+    border-color: #4CAF50;
+  }
+  

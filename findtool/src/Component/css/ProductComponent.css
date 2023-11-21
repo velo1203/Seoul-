@@ -1,0 +1,81 @@
+/* 부모 컨테이너 */
+.product-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.products-wrapper {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+/* 개별 카드 */
+.product-container {
+    width: 100%;
+    margin: 1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    transition: box-shadow 0.3s ease; /* hover 효과 시간 */
+  }
+  .product-container:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.10);
+  }
+
+  .product-image {
+    max-width: 100%;
+    height: 300px;
+  }
+  
+  .product-details {
+    margin-top: 10px;
+  }
+  
+  /* 상품 이름 강조 */
+  .product-model {
+    font-size: 1.2em; /* 글씨 크기를 조금 크게 */
+    font-weight: bold; /* 굵게 */
+    margin-bottom: 8px;
+  }
+  
+  /* 가격 강조 */
+  .product-fee {
+    margin-bottom: 8px;
+  }
+  
+  /* 주소 텍스트 처리 */
+  .product-place {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* ... 처리 */
+    max-width: 90%; /* 적당한 최대 폭 지정 */
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+@media (min-width: 600px) {
+    .product-container {
+      width: 48%;
+    }
+  }
+  
+  /* 화면 폭이 900px 이상일 때 */
+  @media (min-width: 900px) {
+    .product-container {
+      width: 31.3333%;
+    }
+  }
+  
+  /* 화면 폭이 1200px 이상일 때 */
+  @media (min-width: 1200px) {
+    .product-container {
+      width: 23%;
+    }
+  }
